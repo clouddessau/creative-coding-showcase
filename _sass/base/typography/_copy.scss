@@ -1,0 +1,15 @@
+p {
+  max-width: $max_width-text;
+  line-height: 1.3
+}
+
+article {
+  margin: 0 auto;
+  max-width: $max_width-content;
+}
+
+.key {
+  padding: .1em .4em;
+  border: 1px solid $color-text_secondary;
+  border-radius: 4px;
+}

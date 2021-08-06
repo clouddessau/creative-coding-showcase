@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main>
+      <div id="post" {% if page.canvas %}class="canvas-{{ page.canvas }}"{% endif %}>
+        {{ content }}
+        <div>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
+          <p class="post-author">By {{ page.author }}</p>
+          <div class="post-hint">
+          <p>Press <span class="key">S</span> to save an image of the canvas</p>
+          {% if page.reset == true %}
+            <p>Press <span class="key">N</span> to reset the drawing</p>
+          {% endif %}
+          </div>
+        </div>
+      </div>
+      <ul class="post-navigation">
+        {% if page.previous %}
+        <li>
+          <a href="{{ page.previous.url }}">&#xe002; Previous</a>
+        </li>
+        {% endif %}
+        {% if page.next %}
+        <li>
+          <a href="{{ page.next.url }}">Next &#xe004;</a>
+        </li>
+        {% endif %}
+      </ul>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
