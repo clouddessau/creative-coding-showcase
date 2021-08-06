@@ -1,2 +1,3 @@
-# creative-coding-showcase
- Creative Coding workshop showcase (Dessau Department of Design Summer School 2021)
+# Summer School 2021: Creative Coding – Showcase
+
+_Showcase of the “Creaive Coding” workshop at Dessau Department of Design Summer School 2021_

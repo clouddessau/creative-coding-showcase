@@ -1,0 +1,44 @@
+.posts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  gap: 1rem 3rem;
+  justify-content: center;
+
+  li {
+    &:hover img {
+      transform: scale(1.04)
+    }
+
+    a {
+      color: $color-text;
+
+      &:hover {
+        color: $color-text
+      }
+    }
+
+    img {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+      display: block;
+      transition: all .2s ease-out;
+    }
+
+    figcaption {
+      padding: 1rem;
+      //background: hsl(0, 0%, 95%);
+
+      h2 {
+        margin-bottom: .2em
+      }
+
+      p {
+        margin: 0;
+        color: $color-text_secondary;
+        font-size: .8em
+      }
+    }
+  }
+}

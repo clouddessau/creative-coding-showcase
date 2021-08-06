@@ -1,0 +1,25 @@
+nav {
+  font-size: 1.5em;
+  text-transform: uppercase;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      &.nav-active a {
+        color: $color-text;
+        font-family: "TTInterphases-DemiBold", $font_family-default
+      }
+
+      a {
+        color: $color-text_secondary;
+
+        &:hover {
+          color: $color-text
+        }
+      }
+    }
+  }
+}

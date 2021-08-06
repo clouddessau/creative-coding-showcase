@@ -1,0 +1,10 @@
+.logo img {
+  height: 3rem;
+  display: block;
+  opacity: .5;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    opacity: 1
+  }
+}

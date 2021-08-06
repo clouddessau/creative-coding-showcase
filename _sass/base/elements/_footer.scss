@@ -1,0 +1,30 @@
+footer {
+  padding-top: var(--padding_content);
+  padding-bottom: var(--padding_content);
+  color: $color-text_secondary;
+  font-size: .8em;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 2em;
+      
+      &:last-child {
+        margin-right: 0
+      }
+
+      a {
+        color: $color-text_secondary;
+
+        &:hover {
+          color: $color-text
+        }
+      }
+    }
+  }
+}

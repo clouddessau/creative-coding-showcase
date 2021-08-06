@@ -1,0 +1,13 @@
+$max_width-content: 1200px;
+
+$breakpoint-desktop: 801px;
+
+:root {
+  --padding_content: 1rem;
+}
+
+@media (min-width: $breakpoint-desktop) {
+  :root {
+    --padding_content: 2rem;
+  }
+}

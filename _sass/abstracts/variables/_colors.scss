@@ -1,0 +1,6 @@
+$color-text: hsl(0, 0%, 5%);
+$color-text_secondary: lighten($color-text, 50%);
+$color-background: #fff;
+
+$color-link: hsl(230, 50%, 50%);
+$color-link_hover: darken($color-link, 20%);
