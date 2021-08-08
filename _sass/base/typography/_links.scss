@@ -6,3 +6,7 @@ a {
     color: $color-link_hover
   }
 }
+
+.link-mail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld)
+}
