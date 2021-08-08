@@ -5,6 +5,7 @@ p, article ul {
 }
 
 article {
+  position: relative;
   margin: 0 auto;
   max-width: $max_width-content;
 

@@ -1,0 +1,36 @@
+.conductors {
+  margin: 2rem 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      margin-right: 1rem;
+      transition: all .2s ease-out;
+
+      &:last-child {
+        margin-right: 0
+      }
+
+      &:hover {
+        transform: scale(1.05)
+      }
+
+      img {
+        width: 7.5rem;
+        border-radius: 50%
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop + 200px) {
+  .conductors {
+    left: $max_width-text;
+    position: absolute;
+    margin: 0 0 0 6rem
+  }
+}
