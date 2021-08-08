@@ -1,13 +1,20 @@
 nav {
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
 
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 
     li {
+      margin-right: .5em;
+
+      &:last-child {
+        margin-right: 0
+      }
+
       &.nav-active a {
         color: $color-text;
         font-family: "TTInterphases-DemiBold", $font_family-default
@@ -25,5 +32,11 @@ nav {
         }
       }
     }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  nav {
+    font-size: 1.2em
   }
 }
