@@ -5,7 +5,35 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  .logo a {
-    display: block
+  .logo {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      display: none
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  header {
+    .logo {
+      a:hover + h1 {
+        margin-left: 1em;
+        opacity: 1;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.2em;
+        display: inherit;
+        opacity: 0;
+        transition: all .2s ease-out;
+        cursor: default;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none
+      }
+    }
   }
 }
